@@ -1,41 +1,21 @@
 <div>
-    <h1>Aanvragen inhaalexamens</h1>
-    <br /><br />
-    <form action='/aanvraag' method='POST'>
+    <!-- <form action="/VERANDER DIT!!!!!!!" method="post">
         <div>
+            <label for="voornaam">voornaam:</label><br>
+            <input type="text" id="voornaam" name="voornaam" value="amine" /><br>
             <label for="naam">naam:</label><br>
-            <input type="text" id="naam" name="naam" value="amine" /><br>
-            <label for="examen">examen:</label><br>
-            <input type="text" id="examen" name="examen" value="webtech" /><br>
-            <label for="reden">reden:</label><br>
-            <input type="text" id="reden" name="reden" value="ziek" /><br>
-            <label for="datinex">datum van indienen examen:</label><br>
-            <input type="date" id="datinex" name="datinex" /><br>
-        </div>
+            <input type="text" id="naam" name="naam" value="abdelfettah" /><br>
+            <label for="leeftijd">leeftijd:</label><br>
+            <input type="number" id="leeftijd" name="leeftijd" value="22" /><br>
 
+        </div>
+        <br>
         <button type="submit">verzenden</button>
-    </form>
+    </form> -->
 </div>
 <br>
-<a href="/search"> go to search a student</a>
-<br>
 <div>
-    <h3>toon alle studenten voor inhaalexamens</h3>
-    <ul>
-        <% for(var i =0; i<namen.length; i++ ){%>
-            <li>
-                <%= JSON.stringify(namen[i].body.naam) %>
-            </li>
-            <li>
-                <%= JSON.stringify(namen[i].body.examen) %>
-            </li>
-            <li>
-                <%= JSON.stringify(namen[i].body.reden) %>
-            </li>
-            <li>
-                <%= JSON.stringify(namen[i].body.datinex) %>
-            </li>
-            <br>
-            <%}%>
-    </ul>
+
+
+
 </div>
