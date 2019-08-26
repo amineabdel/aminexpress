@@ -36,6 +36,8 @@ MongoClient.connect(url, (err, client) => {
 
 app.get("/", (req, res) => {
     db.collection("overtredingen").find().toArray((err, result) => {
-        res.render
+        res.render("index.ejs", {
+            examens: result
+        })
     })
 })

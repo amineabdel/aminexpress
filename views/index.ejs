@@ -1,20 +1,32 @@
 <div>
-    <!-- <form action="/VERANDER DIT!!!!!!!" method="post">
+    <form action="/search" method="post">
         <div>
-            <label for="voornaam">voornaam:</label><br>
-            <input type="text" id="voornaam" name="voornaam" value="amine" /><br>
-            <label for="naam">naam:</label><br>
-            <input type="text" id="naam" name="naam" value="abdelfettah" /><br>
-            <label for="leeftijd">leeftijd:</label><br>
-            <input type="number" id="leeftijd" name="leeftijd" value="22" /><br>
-
+            <label for="opnameplaats_straat">opnameplaats_straat:</label><br>
+            <input type="text" id="opnameplaats_straat" name="opnameplaats_straat" value="straat" /><br>
         </div>
         <br>
         <button type="submit">verzenden</button>
-    </form> -->
+    </form>
 </div>
 <br>
+<br>
+<br>
+<br>
+
 <div>
+    <% for(var i=0; i <examens.length; i++) {%>
+        <span><b></b><%= examens[i].id %></span><br />
+        <span><b></b><%= examens[i].datum_vaststelling_jaar %></span><br />
+        <span><b></b><%= examens[i].datum_vaststelling_maand %></span><br />
+        <span><b></b><%= examens[i].datum_vaststelling %></span><br />
+        <span><b></b><%= examens[i].opnameplaats_straat %></span><br />
+        <span><b></b><%= examens[i].opnameplaats_rijrichting_gaand %></span><br />
+        <span><b></b><%= examens[i].opnameplaats_zone_snelheid %></span><br />
+        <span><b></b><%= examens[i].aantal_passanten %></span><br />
+        <span><b></b><%= examens[i].aantal_overtredingen_snelheid %></span><br />
+        <span><b></b><%= examens[i].aantal_overtredingen_roodlicht %></span><br />
+        <br>
+        <% } %>
 
 
 
